@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend Finder app to compare relative answers from user surveys",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stwilliams018/FriendFinder.git"
+  },
+  "author": "T Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stwilliams018/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/stwilliams018/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "heroku": "^7.22.2",
+    "path": "^0.12.7"
+  }
+}
