@@ -1,46 +1,54 @@
 //A GET route with the url /api/friends. This will be  used to display a JSON of all possible friends.
 //A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
-var friends = require("../data/friend");
+var friends = require("../data/friends");
 
 
 module.exports = function(app) {
 
 app.get("/api/friends", function(req, res) {
-    return  res.json(friends); 
+  
+    return  res.json(friends);
+
     
  });
 app.post("/api/friends", function(req, res) {
     userData = (req.body)
-    console.log(friends.name)
-    //console.log(friends)
     
     var newUserTotal = 0
     //var oldUserTotal = 0,
-    //var lowestDiff = 50
+    var lowestDiff = 50
+    
 
     for (var i=0; i<req.body.scores.length; i++){
        newUserTotal += parseInt(req.body.scores[i]) 
     };
-    //for (var i=0; i<friends.length; i++){
-   //   oldUserTotal += parseInt(friends.scores[i]);
-  
-     // console.log(oldUserTotal);
-  
-      //totalDiff = Math.abs(newUserTotal - oldUserTotal);
-        //if (totalDiff < lowestDiff) {
-          //lowestDiff = totalDiff;
-          //bestMatch.name = friends.name[i];
-          //bestMatch.photo = friends.photo[i];
-        //}
-      //};
-  
-      var bestMatch = {
-        name : (req.body.name),
-        photo : (req.body.photo),
-      }
 
+    for (var i=0; i<friends.length; i++){
+      var oldUserTotal = 0
+
+      console.log("friend bracket i",friends[i])
+
+      for (var k=0; k<friends[i].scores.length; k++){
+        oldUserTotal += parseInt(friends[i].scores[k]);
+        var totalDiff = Math.abs(newUserTotal -oldUserTotal)
+
+        if (totalDiff < lowestDiff){
+          lowestDiff = totalDiff
+          bestName = friends[i].name;
+          bestPhoto = friends[i].photo;
+        }
+      }
+    
+  
+    }  
+      var bestMatch = {
+        name : bestName,
+        photo : bestPhoto,
+      }
+    
     res.json(bestMatch);
     friends.push(userData);
+    console.log(req.body)
     console.log (newUserTotal);
     console.log(bestMatch.name);
     console.log(bestMatch.photo)
