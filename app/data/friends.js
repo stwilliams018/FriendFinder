@@ -1,7 +1,7 @@
 var friends = [
 	{
-	"name" :"Jack the Ripper",
-	"photo" :"",
+	"name" :"Megatron",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/7/7f/Megatron.jpg",
 	"scores" : [
 		"1",
 		"1",
@@ -16,7 +16,7 @@ var friends = [
 		]
 },{
 	"name" :"Cruella de Vil",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/0/08/Cruella_de_Vil.gif",
 	"scores" : [
 		"2",
 		"2",
@@ -30,8 +30,8 @@ var friends = [
 		"1"
 		]
 },{
-	"name" :"Homer Simpson",
-	"photo" :"",
+	"name" :"Mr Burns",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png",
 	"scores" : [
 		"2",
 		"2",
@@ -46,7 +46,7 @@ var friends = [
 		]
 },{
 	"name" :"Wicked Witch of the west",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/c/c1/Theodora_Mila_Kunis.jpg",
 	"scores" : [
 		"3",
 		"3",
@@ -61,7 +61,7 @@ var friends = [
 		]
 },{
 	"name" :"Hanibal Lector",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/6/6e/Hannibal_Lecter_in_Silence_of_the_Lambs.jpg",
 	"scores" : [
 		"3",
 		"3",
@@ -76,7 +76,7 @@ var friends = [
 		]
 },{
 	"name" :"Cersei Baratheon",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/9/94/Cersei_Lannister-Lena_Headey.jpg",
 	"scores" : [
 		"4",
 		"4",
@@ -91,7 +91,7 @@ var friends = [
 		]
 },{
 	"name" :"Chucky",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/7/72/Chucky_%28Child%27s_Play%29.jpg",
 	"scores" : [
 		"4",
 		"4",
@@ -105,8 +105,8 @@ var friends = [
 		"4"
 		]
 },{
-	"name" :"Mama Fratelli",
-	"photo" :"",
+	"name" :"Ursala",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/a/ab/UrsulaTheLittleMermaid.jpg",
 	"scores" : [
 		"5",
 		"5",
@@ -120,8 +120,8 @@ var friends = [
 		"4"
 		]
 },{
-	"name" :"Lord Vodemort",
-	"photo" :"",
+	"name" :"Lord Voldemort",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/a/a3/Lordvoldemort.jpg",
 	"scores" : [
 		"5",
 		"5",
@@ -136,10 +136,25 @@ var friends = [
 		]
 },{
 	"name" :"Cobra Commander",
-	"photo" :"",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/b/ba/Cobra_commander.jpg",
 	"scores" : [
 		"5",
 		"5",
+		"4",
+		"4",
+		"4",
+		"1",
+		"1",
+		"1",
+		"1",
+		"1"
+		]
+},{
+	"name" :"Maleficent",
+	"photo" :"https://upload.wikimedia.org/wikipedia/en/a/a9/Maleficent_disney.png",
+	"scores" : [
+		"2",
+		"2",
 		"4",
 		"4",
 		"4",
